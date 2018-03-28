@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="web3.js/dist/web3.min.js"></script>
+    <script src="./app.js"></script>
+    <meta charset="UTF-8">
+    <title>King of the Hill</title>
+</head>
+<body onload="updateInfo(), startTimer()">
+
+    <div class="topnav" id="topnavbar">
+        <a id="logo" href="#home">Tesseract</a>
+        <a href="about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+    <div class="game">
+        <p>Current King: <span id="currentKing">0x0000000000000000000000000000000000000000</span></p>
+        <p>Highest Bet: <span id="currentBet">0</span> Ether</p>
+        <p>Jackpot: <span id="jackpot">0</span></p>
+        <p>Remaining: <span id="remaining">0</span></p>
+    </div>
+
+    <div id="makeBet">
+        <form>
+            <label id="makeTitle">Bet amount: </label>
+            <div id="centerBox">
+                <input type="number" id="betInfo" name="amount">
+                <button type="button" id="sendButton" onclick="sendBet(document.getElementById('betInfo').value)">Send Transaction</button>
+            </div>
+    </form>
+    </div>
+</body>
+</html>

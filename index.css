@@ -1,0 +1,103 @@
+body {
+    background-color: gray;
+    margin: 0px;
+}
+
+.topnav {
+    background-color: dimgray;
+    overflow: hidden;
+    border: none;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.topnav a {
+    border-right: 1px solid black;
+}
+
+.topnav a:hover {
+    background-color: lightgray;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+#logo {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.game {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #adadad;
+    position: relative;
+
+    padding-top: 1px;
+    padding-bottom: 30px;
+}
+
+.game span {
+    font-weight: normal;
+}
+
+#makeBet {
+    background-color: black;
+    padding: 10px 0px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+#makeBet input {
+    background-color: lightgray;
+    border: 2px solid darkslategray;
+    border-radius: 20px;
+    padding: 15px 8px 15px 60px;
+    width: 20%;
+    background-image: url("http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/ethereum.png");
+    background-size: contain;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#makeBet input:focus {
+    background-color: lightgoldenrodyellow;
+}
+
+#makeBet label {
+    font-weight: bold;
+    font-size: 30px;
+    color: #adadad;
+}
+
+#centerBox {
+    margin: 0px auto;
+    display: inline;
+}
+
+#sendButton {
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #adadad;
+    margin-left: 20px;
+}
+
+#sendButton:hover {
+    background-color: indianred;
+}
